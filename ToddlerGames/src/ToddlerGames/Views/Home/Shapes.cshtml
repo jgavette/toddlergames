@@ -1,0 +1,97 @@
+﻿@model ToddlerGames.Models.Score
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
+@{
+    ViewData["Title"] = "Shapes";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+@*@using (Html.BeginForm("CreateNew", "Score", FormMethod.Get))
+{
+    <input type="submit" value="Score to member" class="btn btn-default btn-success" />
+}*@
+@*<div>*@
+    <div class="articlecontainer">
+    <table id="t01">
+        <thead>
+        <th></th>
+        <th></th>
+        <th></th>
+    
+    
+        </thead>
+        <tr>
+            <td><img src="~/images/Triangel.jpg" alt="Bird" style="width:304px;height:228px;"></td>
+
+            <td>
+                @*<form asp-controller="Scores" asp-action="PostScore" method="post" type="submit">*@
+                    <img src="~/images/Circle.jpg" alt="Bird" style="width:304px;height:228px;">
+                    @*<input type="submit" value="PostScore" class="btn btn-default btn-success" />*@
+                    @*<a asp-area="" asp-controller="Scores" asp-action="PostScore"></a>
+                </form>*@
+            </td>
+
+            <td><img src="~/images/Rectangle.jpg" alt="Bird" style="width:304px;height:228px;"></td>
+
+
+        </tr>
+
+       
+    </table>
+
+        <form asp-controller="Scores" asp-action="PostScore" method="post">
+
+            @*<img src="~/images/large.gif" alt="Bird" style="width:304px;height:228px;">
+            <audio src="~/images/sndThud.mp3"></audio>*@
+
+            <button type="submit" class="btn btn-default btn-success" data-toggle="collapse" data-target=".navbar-collapse">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a>Which one of these shapes is the Circle?</a>
+        </form>
+    </div>
+<style>
+    table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+    }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            color: white;
+            background-color: black;
+        }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+</style>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgly3xd9o+kSFtqpPhl6liwAAAAACAAAAAAAQZgAAAAEAACAAAABXHbGnIpHQ/ivCXuf0kQWzo06yviEDAgmgicmpCJ6blQAAAAAOgAAAAAIAACAAAAAxgHHMBHQHnvJf96ERBCy5jIG1LLM13Kr3O7E/nvap84AAAAA9HSiNWySpR2JE12JIu+JOCZEhlq1hOZ1tv0wLA4y6BX66Kze+kqWNyRzcQc9kzeM03iYh+hJFH2JjH7Oo4eAP1cX+s+gSz1nOrrrlQQ3vO7VMxShv284RAPZo5r6eoKir1DMNLjuI8OaJ8lVB/AwHjU48GwKijN+Ke9nRqFijGEAAAAAPSTj+oBfP3JEqo7hIY5Dp8y0AFkhiXDjeFViwYE/V7fekiAf84dgvpnhBRmd8DZKPrA7sEMnVHPj9exIKwSL9</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <EfMigrations Include="ToddlerGames.Repositories.AppIdentityDbContext">
+      <Value>Data Source=tcp:toddlergamesserver.database.windows.net,1433;Initial Catalog=toddlergamesdb;Persist Security Info=False;User ID=Jon;Password=Butt7777;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </EfMigrations>
+    <EfMigrations Include="ToddlerGames.Repositories.ApplicationDbContext">
+      <Value>Data Source=tcp:toddlergamesserver.database.windows.net,1433;Initial Catalog=toddlergamesdb;Persist Security Info=False;User ID=Jon;Password=Butt7777;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </EfMigrations>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ToddlerGames.Models.Score>
+ 
+
+        @foreach (var scr in Model)
+        {
+
+
+            <div class="articlecontainer">
+                <table id="t01">
+                    <thead>
+                        <th>Toddler Name </th>
+                        <th>ScoreNum</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Words of Wisdom</th>
+                    </thead>       
+                    <tr>
+                        <td>@scr.From.Name</td>
+                        <td>Score: @scr.ScoreNum</td>
+
+                        <td>From: @scr.From.MemberID</td>
+                        <td>@scr.Date.ToString("MM/dd/yyyy")</td>
+                    
+                        <td>@scr.Topic</td>
+                        </tr>
+                        
+                    <tbody>
+                        @*<tr><td>@scr.Body</td></tr>*@
+                    </tbody>
+                </table>
+            </div>
+            <style>
+                table#t01 {
+                    width: 100%;
+                    background-color: #f1f1c1;
+                }
+
+                    table#t01 tr:nth-child(even) {
+                        background-color: #eee;
+                    }
+
+                    table#t01 tr:nth-child(odd) {
+                        background-color: #fff;
+                    }
+
+                    table#t01 th {
+                        color: white;
+                        background-color: darkblue;
+                    }
+
+                table, th, td {
+                    border: 1px solid black;
+                }
+
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+
+                th, td {
+                    padding: 15px;
+                }
+            </style>
+        }

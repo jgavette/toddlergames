@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Welcome & " + ViewBag.Greeting;
+}
+<h2>
+    @ViewData["Title"]
+</h2>
+<h3>@ViewData["Message"]</h3>
+<h4>
+    <p>This page is dedicated to thie initial development of toddlers and to increase thier ability to recognize and respond</p>
+    <p>The idea is to play a game of the word to the object. When you hear "Which one of these is a square?" you click the square on the screen</p>
+    <p>To start a new game first Login, then click on the links above. Choose either Shapes or Numbers</p>
+</h4>
+
+<html>
+<head>
+    <meta name="viewport" content="width = device-width" />
+    <title> Index </title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div class="text-left">
+        @ViewBag.Message1
+        @ViewData["Day"]
+        @ViewData["Hour"]
+        <h2>Bird</h2>
+        <a href='~/Home/Shapes'>
+            <img src="~/images/bird-1773631_1280.png" alt="Bird" style="width:304px;height:228px;">
+
+            </a>
+</div>
+</body>
+</html>
